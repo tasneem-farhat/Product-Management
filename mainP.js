@@ -18,7 +18,7 @@ let total=document.getElementById('total');
 /*buttons*/
 let createbtn=document.getElementById("create");
 let deletealldiv=document.getElementById('deleteall');
-
+let darkbtn=document.getElementById('dark');
 /*****************************Functions***********************************/
 function generateROW(product,index){
   return  `
@@ -47,12 +47,12 @@ function getTotal(){
 
     if(discount.value.length >0){
       total.innerHTML=result- Number(discount.value);
-      total.style.backgroundColor= "rgb(9, 159, 16)";
+      total.style.backgroundColor= "rgb(5, 151, 12)";
     }
 
     else{
       total.innerHTML=result;
-      total.style.backgroundColor= "rgb(9, 159, 16)";
+      total.style.backgroundColor= "rgb(5, 151, 12)";
    }
 
   }else{
@@ -219,4 +219,23 @@ function searchproducts(value){
   }
 }
 document.getElementById("tbody").innerHTML=table;
+}
+
+/***********Dark&Light Mood****************/
+if(localStorage.mood==='light'){
+  document.body.classList.add('light');
+  darkbtn.innerHTML='<i class="bi bi-moon"></i>'
+}
+
+darkbtn.onclick=function(){
+  document.body.classList.toggle('light');
+
+  if( document.body.classList.contains('light')){
+    localStorage.setItem("mood","light");
+    darkbtn.innerHTML='<i class="bi bi-moon"></i>'
+  }else{
+    localStorage.setItem("mood","dark");
+    darkbtn.innerHTML='<i class="bi bi-sun"></i>'
+  }
+
 }
