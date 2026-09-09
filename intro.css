@@ -74,12 +74,11 @@ body{
   text-decoration: none;
 }
 
-/* الكلام */
 .button p {
   z-index: 2;
 }
 
-/* الدواير */
+
 .button::before,
 .button::after {
   content: "";
@@ -94,19 +93,19 @@ body{
   transition: transform 500ms;
 }
 
-/* الدايرة الشمال */
+
 .button::before {
   left: 0;
   transform: translateX(-8em);
 }
 
-/* الدايرة اليمين */
+
 .button::after {
   right: 0;
   transform: translateX(8em);
 }
 
-/* Hover */
+
 .button:hover::before {
   transform: translateX(-1em);
 }
@@ -115,7 +114,7 @@ body{
   transform: translateX(1em);
 }
 
-/* لون الكلام أثناء الـhover */
+
 .button:hover {
   color: black;
 }
