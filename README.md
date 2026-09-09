@@ -13,6 +13,7 @@ This project was created to practice the core concepts of JavaScript by building
 - 🔎 Search products by title or category
 - 💰 Automatically calculate the total price
 - 📦 Support adding multiple quantities
+- ☀️Support Dark & Light mood
 - 💾 Save products using Browser Local Storage
 - 🔄 Data remains available after refreshing the page
 - 📱 Responsive and simple user interface
