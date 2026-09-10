@@ -22,7 +22,7 @@ This project was created to practice the core concepts of JavaScript by building
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript
 - Browser Local Storage
 - Bootstrap Icons
 
